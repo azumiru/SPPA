@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SPPA</title>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+<!-- Bootstrap 3.3.2 -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- FontAwesome 4.3.0 -->
+<link href="fonts/fa/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- Ionicons 2.0.0 -->
+<link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<!-- Date Picker -->
+<link href="js/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+<!-- Daterange picker -->
+<link href="js/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+<!-- DATA TABLES -->
+<link href="js/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+<!-- bootstrap wysihtml5 - text editor -->
+<link href="js/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+<!-- SPPA CSS -->
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>  
+    <![endif]-->
+</head>
+
+<body>
+<!-- header -->
+<div class="header clearfix">
+  <div class="container">
+    <ul class="pull-right gov-logo">
+      <li role="presentation" class="jata-negara"></li>
+      <li role="presentation" class="jata-negara jata-imigresen"></li>
+      <li role="presentation" class="jata-negara kdn-logo"></li>
+      <li role="presentation" class="jata-negara satu-malaysia"></li>
+    </ul>
+    <h3 class="text-muted logo"></h3>
+  </div>
+</div>
+<!-- end header -->
+<!-- jumbotron subpages -->
+<div class="sub-jumbo">
+  <div class="container">
+    <nav class="navbar navbar-sppa">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About SPPA</a></li>
+          <li><a href="#">SPPA Flow</a></li>
+          <li class="active"><a href="#">Login</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Helpdesk</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </nav>
+    <div class="sub-jumbo-text">
+      <h3>Master Agency</h3>
+      <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Master Agency View</li>
+        </ol> 
+      </div>
+  </div>
+  <!--/.container-fluid --> 
+</div>
+<!-- end jumbotron subpages -->
+<section class="login-info">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-right">
+            	<i class="glyphicon glyphicon-user"></i> Logged in as Master Agency
+            </div>
+        </div>
+    </div>
+</section>
+<!-- content -->
+
+<section class="form_sppa">
+	<div class="col-lg-2 col-lg-offset-2 left_side">
+    	<h2 class="margin-top-40">Master Menu</h2>
+        <ol>
+        	<li>Maintenance
+            	<ol>
+                    <li class="active"><a href="master-registercompany.html">Register company</a></li>
+                    <li><a href="#">User Login management</a></li>
+                    <li><a href="#">Maintain Category</a></li>
+                    <li><a href="#">Maintain Company type</a></li>
+                    <li><a href="#">Maintain types of checklist</a></li>
+                 </ol>
+            </li>
+            <li><a href="master-viewrequest.html">View Request</a></li>
+            <li><a href="master-reporting.html">Reporting</a></li>
+        </ol>
+    </div>
+    <div class="col-lg-8 right_side">
+    	<h2>Register Company</h2>
+        <div class="box">
+                <div class="box-header">
+                  <div class="btn-group col-lg-2">
+                   	<button type="button" class="btn btn-form-header"><i class="fa fa-plus-circle"></i> Create New</button>
+                  </div>
+                  <div class="btn-group col-lg-10 text-right">
+                  	<form class="form-inline">
+                      <div class="form-group">
+                        <p class="form-control-static">Search: </p>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" id="TextInput" class="form-control" placeholder="Company No">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" id="TextInput" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <select id="selectMenu" class="form-control">
+                          <option>Category</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select id="selectMenu" class="form-control">
+                          <option>Type</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-form-header-secondary"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                   </div>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  	<div class="row">
+            			<div class="col-md-12">
+                        	<table id="example1" class="table table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th>No</th>
+                                    <th>Company No</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Type</th>
+                                    <th>&nbsp;</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td><form class="form-inline">
+                                      <div class="form-group">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="A2349-T">
+                                          <div class="input-group-addon" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-search"></i></div>
+                                        </div>
+                                      </div>
+                                    </form></td>
+                                    <td>Amir Ahmad Plantation Sdn Bhd</td>
+                                    <td>Plantation</td>
+                                    <td>Employer</td>
+                                    <td><a href="#"><i class="glyphicon glyphicon-edit"></i></a>&nbsp;<a href="#"><i class="glyphicon glyphicon-remove"></i></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td><form class="form-inline">
+                                      <div class="form-group">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="A2349-T">
+                                          <div class="input-group-addon" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-search"></i></div>
+                                        </div>
+                                      </div>
+                                    </form></td>
+                                    <td>Amir Ahmad Plantation Sdn Bhd</td>
+                                    <td>Plantation</td>
+                                    <td>Employer</td>
+                                    <td><a href="#"><i class="glyphicon glyphicon-edit"></i></a>&nbsp;<a href="#"><i class="glyphicon glyphicon-remove"></i></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                	<div class="row">
+                        <div class="col-lg-12 text-right">
+                            <ul class="pagination">
+                                <li class="paginate_button active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></li>
+                                <li class="paginate_button "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+    </div>
+</section>
+
+<!-- end content -->
+<!-- footer -->
+<div class="footer">
+<div class="container">
+<div class="row">
+  <div class="col-lg-4">
+    <h3 class="text-muted logo_silver clearfix"></h3>
+    <p>Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris.</p>
+    <p>COPYRIGHT © SPPA 2016.<br>
+      ALL RIGHTS RESERVED.</p>
+  </div>
+  <div class="col-lg-4">
+    <h3 class="footer_headline">QUICK LINKS</h3>
+    <ul class="footer_list">
+      <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Login employer</a></li>
+      <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Login agency</a></li>
+      <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">Login master agency</a></li>
+      <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">About SPPA</a></li>
+      <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">SPPA flow</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h3 class="footer_headline">GET IN TOUCH</h3>
+    <ul class="footer_list">
+      <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        <address>
+        B 15-5, Tower B, Northpoint<br>
+        Mid Valley City<br>
+        # 1, Medan Syed Putra Utara,<br>
+        59200 Kuala Lumpur
+        </address>
+      </li>
+      <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>603 2283 2822</li>
+      <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:Enquiries@SPPA.com.my">Enquiries@SPPA.com.my</a></li>
+      <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a href="http://www.sppa.com.my">http://www.sppa.com.my</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- end footer -->
+<!-- modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>Company Details</h4>
+      </div>
+      <div class="modal-body">
+      
+        <form>
+          <div class="row">
+        	<div class="col-lg-12 text-center">
+            	<img src="img/company-logo.jpg" width="120" height="120"> </div>
+          </div>
+          <div class="row margin-top-20">
+        	<div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputName2">Company No</label>
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="A2349-T">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName2">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Amir Ahmad Plantation Sdn Bhd">
+                  </div>
+                  <fieldset class="form-group">
+                        <label for="formGroupExampleInput">Address:</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3">123 Street</textarea>
+                    </fieldset>
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Type</label>
+                    <select id="selectMenu" class="form-control">
+                          <option>Employer</option>
+                        </select>
+                  </div>
+             </div>
+             <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Contact Person</label>
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Ahmad">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Ahmad@yahoo.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Phone Number</label>
+                    <input type="tel" class="form-control" id="exampleInputEmail2" placeholder="0123456789">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Category</label>
+                    <select id="selectMenu" class="form-control">
+                          <option>Plantation</option>
+                        </select>
+                  </div>
+              </div>
+           </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+      	<div class="row">
+              <div class="col-lg-12 text-center">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">SAVE</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+              </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end modal -->
+ 	<!-- jQuery 2.1.3 -->
+    <script src="js/jQuery/jQuery-2.1.3.min.js"></script>
+    <!-- jQuery UI 1.11.2 -->
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="js/bootstrap.js" type="text/javascript"></script>    
+    <!-- datepicker -->
+    <script src="js/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- DATA TABES SCRIPT -->
+    <script src="js/datatables/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+	$(document).ready(function(e) {
+        $('#myTab2 a').click(function (e) {
+		  //e.preventDefault();
+		  //$(this).tab('show');
+		});
+		
+		$('#datetimepicker1').datetimepicker();
+    });
+	</script>
+
+</body>
+</html>
